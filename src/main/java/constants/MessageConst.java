@@ -18,6 +18,9 @@ public enum MessageConst {
 
     //バリデーション
     E_NONAME("氏名を入力してください。"),
+    E_NOCLIENTNAME("取引先を入力してください。"),
+    E_NOADDRESS("住所を入力してください。"),
+    E_NOPHONE_NUMBER("電話番号を入力してください。"),
     E_NOPASSWORD("パスワードを入力してください。"),
     E_NOEMP_CODE("社員番号を入力してください。"),
     E_EMP_CODE_EXIST("入力された社員番号の情報は既に存在しています。"),

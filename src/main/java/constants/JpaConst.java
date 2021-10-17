@@ -51,6 +51,10 @@ public interface JpaConst {
     String CLI_COL_UPDATED_AT = "updated_at";
     String CLI_COL_DELETE_FLAG = "delete_flag";
 
+    int CLI_DEL_TRUE = 1; //削除フラグON(削除済み)
+    int CLI_DEL_FALSE = 0; //削除フラグOFF(現役)
+
+
     //Entity名
     String ENTITY_EMP = "employee"; //従業員
     String ENTITY_REP = "report"; //日報

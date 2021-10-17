@@ -22,7 +22,7 @@ public class EmployeeValidator {
      * @return エラーのリスト
      */
     public static List<String> validate(
-            EmployeeService service, EmployeeView ev, Boolean codeDuplicateCheckFlag, Boolean passwordCheckFlag) {
+        EmployeeService service, EmployeeView ev, Boolean codeDuplicateCheckFlag, Boolean passwordCheckFlag) {
         List<String> errors = new ArrayList<String>();
 
         //社員番号のチェック
@@ -100,6 +100,7 @@ public class EmployeeValidator {
         //入力値がある場合は空文字を返却
         return "";
     }
+    
 
     /**
      * パスワードの入力チェックを行い、エラーメッセージを返却
