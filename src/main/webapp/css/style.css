@@ -155,6 +155,32 @@ table#report_list .report_action {
     width: 13%;
 }
 
+
+
+
+table#client_list th {
+    width: 30%;
+    padding: 10px 2%;
+}
+
+table#client_list td {
+    width: 29%;
+    padding: 10px 2%;
+}
+
+tr.row1 {
+        background-color: #f2f2f2;
+}
+tr.row0 {
+        background-color: #ffffff;
+}
+
+
+
+
+
+
+
 pre {
     font-family: "Hiragino Kaku Gothic Pro",Meiryo,"MS PGothic",Helvetica,Arial,sans-serif;
 }
