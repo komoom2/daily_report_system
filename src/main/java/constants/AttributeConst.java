@@ -53,7 +53,10 @@ public enum AttributeConst {
     //取引先管理
     CLIENT("client"),
     CLIENTS("clients"),
-    CLI_COUNT("clients_count");
+    CLI_COUNT("clients_count"),
+    CLI_NAME("name"),
+    CLI_ADDRESS("address"),
+    CLI_PHONE_NUMBER("phone_number");
 
     private final String text;
     private final Integer i;

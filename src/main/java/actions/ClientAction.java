@@ -41,4 +41,12 @@ public class ClientAction extends ActionBase {
         forward(ForwardConst.FW_CLI_INDEX);
     }
 
+    public void entryNew() throws ServletException,IOException{
+        putRequestScope(AttributeConst.TOKEN, getTokenId());
+        putRequestScope(AttributeConst.CLIENT, new ClientView());
+
+        forward(ForwardConst.FW_CLI_NEW);
+
+    }
+
 }
