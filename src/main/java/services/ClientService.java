@@ -39,7 +39,7 @@ public class ClientService extends ServiceBase {
 
         List<String> errors = ClientValidator.validate(this,cv);
                 if ( errors.size() == 0) {
-                    create(cv);
+                    createInternal(cv);
                 }
                 return errors;
     }
@@ -51,15 +51,22 @@ public class ClientService extends ServiceBase {
         savedCli.setAddress(cv.getAddress());
         savedCli.setPhoneNumber(cv.getPhoneNumber());
 
-        LocalDateTime Today = LocalDateTime.now();
-        savedCli.setUpdatedAt(Today);
-
         List<String> errors = ClientValidator.validate(this,cv);
 
         if ( errors.size() == 0 ) {
-            update(savedCli);
+            updateInternal(savedCli);
         }
         return errors;
+    }
+
+    public void destroy(Integer id) {
+        ClientView savedCli = findOne(id);
+        LocalDateTime today = LocalDateTime.now();
+        savedCli.setUpdatedAt(today);
+        savedCli.setDeleteFlag(JpaConst.CLI_DEL_TRUE);
+
+        updateInternal(savedCli);
+
     }
 
 

@@ -45,7 +45,7 @@ public class ClientValidator {
         return "";
 }
 
-    private static String validatePhoneNumber(Integer phoneNumber) {
+    private static String validatePhoneNumber(String phoneNumber) {
         if( phoneNumber == null || phoneNumber.equals("")) {
             return MessageConst.E_NOPHONE_NUMBER.getMessage();
         }

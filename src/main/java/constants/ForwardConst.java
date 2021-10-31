@@ -29,8 +29,11 @@ public enum ForwardConst {
     CMD_CREATE("create"),
     CMD_CLI_CREATE("create"),
     CMD_EDIT("edit"),
+    CMD_CLI_EDIT("edit"),
     CMD_UPDATE("update"),
+    CMD_CLI_UPDATE("update"),
     CMD_DESTROY("destroy"),
+    CMD_CLI_DESTROY("destroy"),
 
     //jsp
     FW_ERR_UNKNOWN("error/unknown"),

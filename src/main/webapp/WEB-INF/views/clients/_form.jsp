@@ -20,14 +20,14 @@
 <br /><br />
 
 <label for="${AttributeConst.CLI_ADDRESS.getValue()}">住所</label><br/>
-<input type="text" name="${AttributeConst.CLI_ADDRESS.getValue() }" value="%{client.address}"/>
+<input type="text" name="${AttributeConst.CLI_ADDRESS.getValue() }" value="${client.address}"/>
 <br /><br />
 
  <label for="${AttributeConst.CLI_PHONE_NUMBER.getValue()}">電話番号</label><br/>
-<input type="text" name="${AttributeConst.CLI_PHONE_NUMBER.getValue() }" value="%{client.phoneNumber}"/>
+<input type="text" name="${AttributeConst.CLI_PHONE_NUMBER.getValue() }" value="${client.phoneNumber}"/>
 <br /><br />
 
-<input type="hidden" name="${AttributeConst.EMP_ID.getValue()}" value="${employee.id}" />
+<input type="hidden" name="${AttributeConst.CLI_ID.getValue()}" value="${client.id}" />
 <input type="hidden" name="${AttributeConst.TOKEN.getValue()}" value="${_token}" />
 <button type="submit">投稿</button>
 

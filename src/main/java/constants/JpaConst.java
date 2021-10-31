@@ -40,6 +40,7 @@ public interface JpaConst {
     String REP_COL_CREATED_AT = "created_at"; //登録日時
     String REP_COL_UPDATED_AT = "updated_at"; //更新日時
 
+
     //取引先テーブル
     String TABLE_CLI = "clients";
     //取引先テーブルカラム

@@ -45,7 +45,7 @@ public class Client {
     private String address;
 
     @Column(name = JpaConst.CLI_COL_PHONE_NUMBER)
-    private Integer phoneNumber;
+    private String phoneNumber;
 
     @Column(name = JpaConst.CLI_COL_CREATED_AT, nullable = false)
     private LocalDateTime createdAt;

@@ -54,6 +54,7 @@ public enum AttributeConst {
     CLIENT("client"),
     CLIENTS("clients"),
     CLI_COUNT("clients_count"),
+    CLI_ID("id"),
     CLI_NAME("name"),
     CLI_ADDRESS("address"),
     CLI_PHONE_NUMBER("phone_number");

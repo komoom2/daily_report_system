@@ -11,8 +11,8 @@
 <c:import url="../layout/app.jsp">
     <c:param name="content">
         <c:if test="${flush != null}">
-            <div id="Flush_success">
-                <c:out value="{flush}"></c:out>
+            <div id="flush_success">
+                <c:out value="${flush}"></c:out>
             </div>
         </c:if>
         <h2>取引先一覧</h2>
@@ -22,7 +22,7 @@
                     <th>取引先名</th>
                     <th>操作</th>
                 </tr>
-                <c:forEach var="client" items="${clientss}" varStatus="status">
+                <c:forEach var="client" items="${clients}" varStatus="status">
                         <tr class="row${status.count % 2}">
                         <td><c:out value="${client.name}" /></td>
                         <td>

@@ -17,7 +17,7 @@ public class ClientView {
     private Integer id;
     private String name;
     private String address;
-    private Integer phoneNumber;
+    private String phoneNumber;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
     private Integer deleteFlag;
